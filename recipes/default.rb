@@ -15,6 +15,14 @@ apt_update "update_sources" do
   action :update
 end
 
+package 'default-jre' do
+  action :install
+end
+
+package 'default-jdk' do
+  action :install
+end
+
 package 'jenkins' do
   action :install
 end
